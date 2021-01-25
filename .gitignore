@@ -104,6 +104,6 @@ dist
 .tern-port
 
 # android build
-android/build/
+android/app/build/
 
 
