@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "categoryId": 1,
+        "name": "Impacts of Green Beans",
+        "hints": [
+            "Remove Heart Diseases",
+            "Prevents Color Cancer",
+            "Improve Bone Health"
+        ]
+    },
+    {
+        "id": 2,
+        "categoryId": 1,
+        "name": "Impacts of Apple",
+        "hints": [
+            "Lorum is a simple dummy test",
+            "Lorum is a simple dummy test",
+            "Lorum is a simple dummy test"
+        ]
+    },
+    {
+        "id": 3,
+        "categoryId": 1,
+        "name": "Impacts of Mango",
+        "hints": [
+            "Lorum is a simple dummy test",
+            "Lorum is a simple dummy test",
+            "Lorum is a simple dummy test"
+        ]
+    },
+    {
+        "id": 4,
+        "categoryId": 1,
+        "name": "Impacts of Orange",
+        "hints": [
+            "Lorum is a simple dummy test",
+            "Lorum is a simple dummy test",
+            "Lorum is a simple dummy test"
+        ]
+    },
+    {
+        "id": 5,
+        "categoryId": 1,
+        "name": "Impacts of White Beans",
+        "hints": [
+            "Lorum is a simple dummy test",
+            "Lorum is a simple dummy test",
+            "Lorum is a simple dummy test"
+        ]
+    }
+]

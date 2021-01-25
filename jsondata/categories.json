@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Food"
+    },
+    {
+        "id": 2,
+        "name": "Exercise"
+    },
+    {
+        "id": 3,
+        "name": "Medical Condition"
+    },
+    {
+        "id": 4,
+        "name": "Fitness"
+    },
+    {
+        "id": 5,
+        "name": "Health Diets"
+    }
+]

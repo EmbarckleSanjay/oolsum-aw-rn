@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Food",
+        "value": 30,
+        "type": "percentage"
+    },
+    {
+        "id": 2,
+        "name": "Health",
+        "value": 50,
+        "type": "percentage"
+    },
+    {
+        "id": 3,
+        "name": "Fitness",
+        "value": 70,
+        "type": "percentage"
+    },
+    {
+        "id": 4,
+        "name": "Mind",
+        "value": 40,
+        "type": "percentage"
+    }
+]
