@@ -29,7 +29,7 @@ import { Icon } from 'react-native-elements'
 import ProgressCircle from 'react-native-progress-circle'
 
 
-const App: () => React$Node = () => {
+const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />

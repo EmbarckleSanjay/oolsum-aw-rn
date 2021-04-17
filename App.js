@@ -10,6 +10,7 @@ import React from 'react';
 
 import {
   StatusBar,
+  ScrollView
 } from 'react-native';
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
@@ -20,23 +21,40 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeTitle from './screens/home/title';
 import HomeScreen from './screens/home';
-
+import DateRange from './screens/home/dateRange'
+import login from './landing/LandingPage'
 
 // options={{ headerShown: false, title: null }} 
 const App = () => {
+
 
   const Stack = createStackNavigator();
 
   return ( // Redux: Global Store
     <>
+   
       <Provider store={store}>
         <StatusBar barStyle="dark-content" />
         <NavigationContainer>
+        
           <Stack.Navigator>
+        
+          <Stack.Screen
+          name="LOG"
+          component={DateRange}
+          options={{ title: 'home' }}/>
+           <Stack.Screen
+          name="hai"
+          component={login}
+          options={{ title: 'welcome' }}/>
             <Stack.Screen name="Home" component={HomeScreen} options={{ headerTitle: props => <HomeTitle {...props} /> }} />
           </Stack.Navigator>
+         
         </NavigationContainer>
+      
       </Provider>
+    
+     
     </>
   );
 };
