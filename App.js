@@ -19,10 +19,7 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import HomeTitle from './screens/home/title';
-import HomeScreen from './screens/home';
-import DateRange from './screens/home/dateRange'
-import login from './landing/LandingPage'
+import Navigatior from './screens/home/Router/Navigator'
 
 // options={{ headerShown: false, title: null }} 
 const App = () => {
@@ -34,24 +31,7 @@ const App = () => {
     <>
    
       <Provider store={store}>
-        <StatusBar barStyle="dark-content" />
-        <NavigationContainer>
-        
-          <Stack.Navigator>
-        
-          <Stack.Screen
-          name="LOG"
-          component={DateRange}
-          options={{ title: 'home' }}/>
-           <Stack.Screen
-          name="hai"
-          component={login}
-          options={{ title: 'welcome' }}/>
-            <Stack.Screen name="Home" component={HomeScreen} options={{ headerTitle: props => <HomeTitle {...props} /> }} />
-          </Stack.Navigator>
-         
-        </NavigationContainer>
-      
+      <Navigatior/>
       </Provider>
     
      

@@ -49,9 +49,7 @@ const HomeScreen = () => {
                     contentInsetAdjustmentBehavior="automatic"
                     style={styles.scrollView}>
                     <View style={styles.body}>
-                        <View style={{ ...styles.sectionContainer, zIndex: 10 }}>
-                            <DateRange />
-                        </View>
+                      
                         <View style={{ ...styles.sectionContainer }}>
                             <ProgressBar data={progressData} />
                         </View>

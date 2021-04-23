@@ -2,15 +2,21 @@ import * as actionTypes from '../actions/actionTypes/login';
 
 // Initial State
 const initialState = {
-  email:"",
-  jwt:"",
+  email:null,
+  jwt:null,
+  nextScreen:false,
+  username:''
 };
-
 // Redux: Home Screen Reducer
+
 const loginReducer = (state = initialState, action) => {
+   console.warn('inside reducer')
+ 
+  // console.warn('state-',state.email)
+ 
   switch (action.type) {
-    case actionTypes.LOGIN_REQUEST: {
-     console.warn("reducer...")
+    case actionTypes.LOGIN_REQUEST: { 
+     console.warn('inside reducer request')
       return {
         ...state,
         email: null,
@@ -18,20 +24,26 @@ const loginReducer = (state = initialState, action) => {
       };
     }
     case actionTypes.LOGIN_RESPONSE: {
+      console.warn('inside reducer response',action.payload)
+     
+      return {
+        ...state,
+        email:action.payload,
+        nextScreen:true,
+        // username:action.payload.data.data.username
         
-        console.log("reducer.....",action.payload)
-        return {
-          ...state,
-          email: action.payload,
-          
-        };
-      }
+      };
+    }
+    
       
       case actionTypes.LOGIN_REQUEST_FAIL: {
+        console.warn('inside reducer-request failed')
         return {
           ...state,
-          email: null,
+          email:null,
           jwt:null,
+          username:'',
+          nextScreen:false
         };
       }
  
